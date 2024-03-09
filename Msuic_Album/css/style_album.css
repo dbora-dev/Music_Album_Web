@@ -1,0 +1,73 @@
+.html {
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #dad7cd;
+  color: #e5e5e5;
+
+  width: 95%;
+  min-height: 600px;
+}
+
+.album_container {
+  min-width: 60%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  height: 280px;
+  width: 360px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 2px 1px rgb(135, 135, 135);
+  background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cowboy-loner-illustration-album-song-cover-design-template-7b150c9911ae8a58391c2278ae502a3d_screen.jpg?ts=1598599968");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.container h1 {
+  margin-bottom: 3em;
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #0000009e;
+}
+
+.disk {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  left: -9rem;
+  background-image: url("../assets/img/new_disk.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation: spin 4000ms linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
